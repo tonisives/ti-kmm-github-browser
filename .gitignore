@@ -116,3 +116,5 @@ DerivedData/
 
 ## Gcc Patch
 /*.gcno
+
+shared.framework
