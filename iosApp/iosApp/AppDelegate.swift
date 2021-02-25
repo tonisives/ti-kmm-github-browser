@@ -1,12 +1,14 @@
 import UIKit
+import shared
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GreetingKt.platform.setupLogging()
+        GreetingKt.i(message: "hello from Swift")
+
         return true
     }
 
